@@ -1,37 +1,27 @@
-title: Hello World
+title: 你好，Hexo
+categories: Blabla
 ---
-Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documentation](http://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](http://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+#### 1. 开场白
+开始写博客了，该开始的总要开始的。这次大概是因为：
+* 明白技术成长需要记录
+* 无聊了
 
-## Quick Start
+#### 2. 原则
+本博客的写作将遵循：
+* KISS原则，Keep It Simple, Stupid!
+* 开心原则，博客的写作影响到了我的心情，将立即停止。
+* 尽力而为原则，考虑到可能存在的读者~~谁知道呢~~，会比平时多花一些时间求真相，主要考虑我也会有收获。
+* 免责原则，本文已知识共享CC~~什么的~~，但未经同行评阅~~也没有必要~~，请不要太相信，~~你服务器炸了跟我并没有什么关系~~。
 
-### Create a new post
+#### 3. 莫忘
+感谢以下技术，1024：
+* Github
+* [Ucloud](http://www.ucloud.cn/)
+* Ubuntu
+* Node.js
+* [Hexo](https://hexo.io/)
+* [Hueman Theme](https://github.com/ppoffice/hexo-theme-hueman)
 
-``` bash
-$ hexo new "My New Post 你好"
 ```
-
-More info: [Writing](http://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
+git clone https://github.com/vixuowis/vixuowis-blog.git
 ```
-
-More info: [Server](http://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](http://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](http://hexo.io/docs/deployment.html)

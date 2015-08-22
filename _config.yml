@@ -1,4 +1,13 @@
 # Header
+# Site
+title: Yinghui's Blog
+subtitle: 所有的博客都是孤芳自赏，所有的分享都是自我陶醉。
+description:
+author: Vixuowis
+language: zh-CN
+timezone:
+logo: 
+
 menu:
   Home: /
   Categories:
@@ -8,7 +17,7 @@ menu:
 fancybox: true
 
 # Thumbnail
-thumbnail: true
+thumbnail: false
 
 # Scroll Loading
 scrollLoading: true
@@ -35,21 +44,20 @@ links:
 
 # Miscellaneous
 # google_analytics:
-favicon: /favicon.png
+# favicon: /favicon.ico
 
 theme: hueman
-language: zh-CN
 
 ###########landscape#############
-# # Hexo Configuration
-# ## Docs: http://hexo.io/docs/configuration.html
-# ## Source: https://github.com/hexojs/hexo/
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
 # # Site
-# title: Hexo
-# subtitle:
+# title: Yinghui's Blog
+# subtitle: 所有的博客都是孤芳自赏，所有的分享都是自我陶醉。
 # description:
-# author: John Doe
+# author: Vixuowis
 # language:
 # timezone:
 
