@@ -1,52 +1,59 @@
-# Header
-# Site
-title: Yinghui's Blog
-subtitle: 所有的博客都是孤芳自赏，所有的分享都是自我陶醉。
-description:
+# =============================================================================
+# NexT Theme configuration
+# =============================================================================
+title: Vixuowis' Blog
+
+avatar: /my-photo.jpeg
+
+# Duoshuo
+duoshuo_shortname: yinghuix
+
+# Disqus
+# disqus_shortname: yinghuix
+
+language: zh-Hans
+
 author: Vixuowis
-language: zh-CN
-timezone:
-logo: 
 
-menu:
-  Home: /
-  Categories:
-  # About: /about/index.html
+description: 博客都是孤芳自赏，分享都是自我陶醉。
 
-# Content
-fancybox: true
+# Social links
+social:
+  GitHub: https://github.com/vixuowis
+  Weibo: http://weibo.com/vixuowis
+  ZhiHu: http://www.zhihu.com/people/vixuowis
 
-# Thumbnail
-thumbnail: false
 
-# Scroll Loading
-scrollLoading: true
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons: by-nc-sa
 
-# Sidebar
-sidebar: right
-social_links:
-  # twitter:
-  # facebook:
-  # google_plus:
-  github: https://github.com/vixuowis
-  rss:
-widgets:
-- recent_posts
-- category
-- archive
-- tag
-- tagcloud
-- links
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+# google_site_verification: VvyjvVXcJQa0QklHipu6pwm2PJGnnchIqX7s5JbbT_0
 
-# Links
-links:
-  Hexo: http://hexo.io
 
-# Miscellaneous
+# Google Analytics
+# Google分析ID
 # google_analytics:
-# favicon: /favicon.ico
 
-theme: hueman
+
+# 百度分析ID
+# baidu_analytics: 50c15455e37f70aea674ff4a663eef27
+
+# Specify the date when the site was setup
+since: 2015
+theme: next
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# =============================================================================
+# End NexT Theme configuration
+# =============================================================================
 
 ###########landscape#############
 # Hexo Configuration

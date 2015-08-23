@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Vixuowis' Blog]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-08-23T11:16:13.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[Vixuowis]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[本博客由Hexo、NexT.Mist强力驱动！]]></title>
+    <link href="http://yoursite.com/2015/08/23/hello-world/"/>
+    <id>http://yoursite.com/2015/08/23/hello-world/</id>
+    <published>2015-08-23T11:16:13.000Z</published>
+    <updated>2015-08-23T11:16:13.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="开场白">开场白</h4><p>开始写博客了，该开始的总要开始的。这次的开始大概是因为：</p>
+<ul>
+<li>明白技术成长需要记录</li>
+<li>真的无聊了</li>
+</ul>
+<h4 id="原则">原则</h4><p>本博客的写作将遵循：</p>
+<ul>
+<li>KISS原则，Keep It Simple, Stupid!</li>
+<li>开心原则，博客的写作影响到了我的心情，将立即停止。</li>
+<li>尽力而为原则，考虑到可能存在的读者，会比平时多花一些时间求真相，主要考虑我也会有收获。</li>
+<li>免责原则，本文已知识共享CC，但未经同行评阅，请不要太认真，<del>你服务器炸了跟我并没有什么关系（逃</del>。</li>
+</ul>
+<h4 id="致谢">致谢</h4><p>感谢以下技术，1024：</p>
+<ul>
+<li>Github</li>
+<li><a href="http://www.ucloud.cn/" target="_blank" rel="external">Ucloud</a></li>
+<li>Ubuntu</li>
+<li>Node.js</li>
+<li><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></li>
+<li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT - Hexo Theme</a></li>
+</ul>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="string">https:</span><span class="comment">//github.com/vixuowis/vixuowis-blog.git</span></span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<h4 id="开场白">开场白</h4><p>开始写博客了，该开始的总要开始的。这次的开始大概是因为：</p>
+<ul>
+<li>明白技术成长需要记录</li>
+<li>真的无聊了</li>
+</ul>
+<h4 id="原则">原则</h4><p>本博客的写作将遵循：</p>
+]]>
+    </summary>
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
+    
+      <category term="vixuowis says" scheme="http://yoursite.com/categories/vixuowis-says/"/>
+    
+  </entry>
+  
+</feed>
