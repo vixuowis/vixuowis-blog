@@ -28,4 +28,8 @@ tags:
 
 ```
 git clone https://github.com/vixuowis/vixuowis-blog.git
+npm install hexo-cli -g
+cd vixuowis-blog
+npm install
+hexo server
 ```
