@@ -1,8 +1,8 @@
 title: 本博客由Hexo、NexT.Mist强力驱动！
-categories: vixuowis says
+categories: Blabla
+date: 2015-08-23 23:11:51
 tags:
 - Hexo
-- NexT
 - Blog
 ---
 #### 开场白
