@@ -5,6 +5,7 @@ menu:
   categories: /categories
   tags: /tags
   about: /about
+  ditch: /ditch
   # commonweal: /404.html
 
 # Place your favicon.ico to /source directory.

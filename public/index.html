@@ -146,6 +146,14 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-ditch">
+          <a href="/ditch" rel="section">
+            <i class="menu-item-icon icon-next-ditch"></i> <br />
+            填坑
+          </a>
+        </li>
+      
 
       
       
@@ -162,6 +170,223 @@
       <div class="main-inner">
         <div id="content" class="content"> 
   <section id="posts" class="posts-expand">
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/12/01/151201-machine-learning/" itemprop="url">
+                机器学习能力使用手册！
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-12-01T10:34:19+08:00" content="2015-12-01">
+            2015-12-01
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/工程师思维/" itemprop="url" rel="index">
+                  <span itemprop="name">工程师思维</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/12/01/151201-machine-learning/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/01/151201-machine-learning/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h4 id="1分钟理解">1分钟理解</h4><p>如果你不知道机器学习，你肯定知道以下技术：数据挖掘、计算机视觉、自然语言处理、生物特征识别、搜索引擎、医学诊断、检测信用卡欺诈、证券市场分析、DNA序列测序、语音和手写识别、战略游戏和机器人。</p>
+<p>这些都是机器学习的应用领域，基本上是一个研究基础算法的学科，这个算法又有学习的能力。一般算法给固定输入，产生固定输出。而机器学习算法通过一定的训练，给定输入可以不断改进输出质量。听上去就比较像人了，事实上也是照着人来设计的，比如神经网络，能做出很神奇的识别效果。</p>
+<p>机器学习在计算机里有点像魔术，虽然很神奇，但是并不是真的有智能，或者说，只是这些数据、算法让你感觉有智能，在做模糊判断，实际上内部机制很简单。</p>
+<p>换句话来思考下，那如果人也是这样呢，看上去挺智能挺神奇智商挺高，但是内部机制都是神经元传递，他们形成的数据、传输能力、连接方式和在一起便是智能。我们如果有天有人脑规模的计算能力，是否也可以完成一个完整的人工智能？希望吧 😄</p>
+<p>在使用这个能力之前，这之前我会告诉你机器学习有两种，一种是有监督学习，一种是无监督学习，区别如下。</p>
+<ul>
+<li>有监督学习：训练数据有人工标注，产生分类能力。</li>
+<li>无监督学习：训练数据无人工标注，产生聚类能力。</li>
+</ul>
+<p>人的话，也会有两种学习方式，通过有标注的书，了解旧事物的特征，从而判断新事物的类别。通过无标注的环境，自动抽取细节，把相似的东东放在一起，等下次有标注的时候再细化特征。</p>
+<h4 id="2分钟设计">2分钟设计</h4><p>你已经知道机器学习基本概念了，来说点更深的，比如做个文本分类，这是有监督学习哦。</p>
+<p>你需要准备以下两个东西：</p>
+<ul>
+<li>训练数据</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>内容</th>
+<th>标注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>机器学习真的很好玩！</td>
+<td>good</td>
+</tr>
+<tr>
+<td>2</td>
+<td>概率论太难玩了！</td>
+<td>bad</td>
+</tr>
+<tr>
+<td>3</td>
+<td>数学很好玩！</td>
+<td>good</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>算法</li>
+</ul>
+<h5 id="1-_特征抽取">1. 特征抽取</h5><p>利用特征抽取工具，在这个例子里叫tokenizer分词器，抽取为以下特征：</p>
+<blockquote>
+<p>1号：机器/学习/真的/很/好玩<br>2号：概率论/太/难玩/了<br>3号：数学/很/好玩</p>
+</blockquote>
+<p>为了简化，我们把每个词编个号<br>w1=机器，w2=学习，w3=真的，w4=很，w5=好玩，w6=概率论，w7=太，w8=难玩，w9=了，w10=数学<br>即：</p>
+<blockquote>
+<p>1号：w1 / w2 / w3 / w4 / w5<br>2号：w6 / w7 / w8 / w9<br>3号：w10 / w4 / w5</p>
+</blockquote>
+<h5 id="2-_贝叶斯概率计算">2. 贝叶斯概率计算</h5><p>我们要用的是贝叶斯公式，P(class|w1w2..wn) = P(w1w2..wn|class)P(class)<br>先算P(class)</p>
+<blockquote>
+<p>P(good)：2/3 = 66.6%<br>P(bad)： 1/3 = 33.3%</p>
+</blockquote>
+<p>再算P(w1w2..wn|class) = P(w1|class)<em>P(w2|class)…</em>P(wn|class)</p>
+<table>
+<thead>
+<tr>
+<th>词语</th>
+<th>编号</th>
+<th>P(wi/good)</th>
+<th>P(wi/bad)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>机器</td>
+<td>w1</td>
+<td>1/8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>学习</td>
+<td>w2</td>
+<td>1/8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>真的</td>
+<td>w3</td>
+<td>1/8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>很</td>
+<td>w4</td>
+<td>1/4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>好玩</td>
+<td>w5</td>
+<td>1/4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>概率论</td>
+<td>w6</td>
+<td>0</td>
+<td>1/4</td>
+</tr>
+<tr>
+<td>太</td>
+<td>w7</td>
+<td>0</td>
+<td>1/4</td>
+</tr>
+<tr>
+<td>难玩</td>
+<td>w8</td>
+<td>0</td>
+<td>1/4</td>
+</tr>
+<tr>
+<td>了</td>
+<td>w9</td>
+<td>0</td>
+<td>1/4</td>
+</tr>
+<tr>
+<td>数学</td>
+<td>w10</td>
+<td>1/8</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h5 id="3-_测试">3. 测试</h5><p>然后就可以计算P(class|w1w2..wn)的最大值了<br>我们找个词语表里有特征的句子溜溜这个算法</p>
+<blockquote>
+<p>4号：概率论真的好玩<br>P(4号|good) = P(概率论/真的/好玩|good) = P(w6w3w5|good) = (3/8)<em>(2/3) = 1/4<br>P(4号|bad) = P(概率论/真的/好玩|bad) = P(w6w3w5|bad) = (1/4) </em> (1/3) = 1/12<br>so: P(4号|good) &gt; P(4号|bad)<br>4号句子是个好句子。 </p>
+</blockquote>
+<p>以上我们就建立了一个可用的分类器，能够判断好多好多跟机器学习好不好玩的句子的好坏与否，这就是情感分析最核心的部分，之后嘛都是工程和优化问题啦~</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -500,7 +725,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -514,7 +739,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
